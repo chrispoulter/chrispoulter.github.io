@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.badge {
+    font-size: 0.9375rem;
+}
+
+.jumbotron {
+    color: #FFF;
+    background-color: #495057;
+    border-bottom: 2px solid #333;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    background-image: url('/images/cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron img {
+    width: 180px;
+    height: 180px;
+}
+
+.jumbotron h1 small {
+    color: #CCC !important;
+}
+
+.jumbotron a.icon {
+    display: inline-block;
+    background-color: #333;
+    padding: 20px;
+}
+
+.jumbotron a.icon:hover {
+    opacity: 0.75;
+}
+
+.jumbotron a.icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #FFF;
+}
