@@ -126,32 +126,32 @@ nav {
     justify-content: space-between;
 }
 
-nav #menu {
+#menu {
     flex-basis: 100%;
 }
 
-nav #menu.collapsed {
+#menu.collapsed {
     display: none;
 }
 
-nav #toggler {
+#toggler {
     display: inline-block;
     line-height: 1;
     padding: 5px;
 }
 
-nav #toggler svg {
+#toggler svg {
     width: 30px;
     height: 30px;
     fill: #eee;
 }
 
-nav #toggler:hover {
+#toggler:hover {
     opacity: 0.75;
 }
 
 nav a {
-    display: inline-block;
+    display: block;
     color: #fff;
     font-size: 1.2rem;
     padding: 10px;
@@ -258,19 +258,19 @@ section {
         max-width: 960px;
     }
 
-    nav #toggler {
+    #toggler {
         display: none;
     }
 
-    nav #menu,
-    nav #menu.collapsed {
+    #menu,
+    #menu.collapsed {
         display: flex;
         flex: 1;
         justify-content: space-between;
     }
 
-    nav #menu ul,
-    nav #menu ul li {
+    #menu ul,
+    #menu ul li {
         display: inline-block;
     }
 }
