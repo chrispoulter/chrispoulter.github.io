@@ -98,14 +98,16 @@ ul {
 
 .card-deck {
     display: flex;
+    flex-flow: row wrap;
     margin-bottom: 20px;
 }
 
 .card {
     flex: 1;
     border: 1px solid #dee2e6;
+    white-space: nowrap;
     padding: 0 20px;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
 }
 
 header {
@@ -114,8 +116,7 @@ header {
 
 nav {
     display: flex;
-    width: 65%;
-    margin: 0 auto;
+    flex-flow: row wrap;
 }
 
 nav ul {
@@ -147,12 +148,6 @@ nav ul:first-child li:first-child a {
     opacity: 1;
     font-size: 1.2rem;
     margin-right: 20px;
-}
-
-footer,
-section {
-    width: 45%;
-    margin: 0 auto;
 }
 
 .jumbotron {
@@ -208,4 +203,42 @@ section {
     width: 30px;
     height: 30px;
     fill: #dee2e6;
+}
+
+nav,
+footer,
+section {
+    margin: 0 20px;
+}
+
+@media (min-width: 576px) {
+    nav,
+    footer,
+    section {
+        margin: 0 auto;
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav,
+    footer,
+    section {
+        margin: 0 auto;
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        margin: 0 auto;
+        max-width: 1140px;
+    }
 }
