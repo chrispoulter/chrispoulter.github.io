@@ -7,8 +7,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.4rem;
     color: #222;
     margin: 0;
 }
@@ -23,43 +22,43 @@ a:hover {
 }
 
 hr {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
     margin: 20px 0;
 }
 
 h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
-h2 {
+h1 span {
     font-size: 1.8rem;
 }
 
-h3 {
+h2 {
     font-size: 1.6rem;
 }
 
+h3 {
+    font-size: 1.4rem;
+}
+
 h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5 {
-    margin: 0 0 20px 0;
-    font-weight: 300;
+h4 {
+    font-weight: 100;
     line-height: 1.2;
+    margin: 20px 0;
 }
 
 h1 span,
 h2 span,
 h3 span,
-h4 span,
-h5 span {
-    font-size: 80%;
-    font-weight: 400;
+h4 span {
     color: #888;
 }
 
@@ -72,7 +71,7 @@ ul {
     display: inline-block;
     color: #fff;
     background-color: #008cba;
-    border: solid 1px #006f94;
+    border: 1px solid #006f94;
     padding: 10px;
 }
 
@@ -86,7 +85,7 @@ ul {
     display: inline-block;
     background-color: #5bc0de;
     color: #fff;
-    padding: 5px 10px;
+    padding: 2px 15px;
 }
 
 .badge-list {
@@ -98,13 +97,15 @@ ul {
 }
 
 .card-deck {
+    display: flex;
     margin-bottom: 20px;
 }
 
 .card {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    padding: 20px;
-    margin-bottom: 20px;
+    flex: 1;
+    border: 1px solid #dee2e6;
+    padding: 0 20px;
+    margin-right: 10px;
 }
 
 header {
@@ -112,19 +113,9 @@ header {
 }
 
 nav {
-    width: 75%;
+    display: flex;
+    width: 65%;
     margin: 0 auto;
-}
-
-nav a {
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 300;
-}
-
-nav a:hover {
-    color: #fff;
-    text-decoration: none;
 }
 
 nav ul {
@@ -132,32 +123,48 @@ nav ul {
     list-style: none;
 }
 
+nav ul:last-child {
+    margin-left: auto;
+}
+
 nav ul li {
     display: inline-block;
 }
 
 nav ul li a {
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
     font-size: 0.8rem;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+nav ul:first-child li:first-child a {
+    opacity: 1;
+    font-size: 1.2rem;
+    margin-right: 20px;
 }
 
 footer,
 section {
-    width: 55%;
+    width: 45%;
     margin: 0 auto;
 }
 
 .jumbotron {
-    color: #fff;
+    color: #dee2e6;
     background-color: #495057;
     background-image: url('/images/cover.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 2px solid #333;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     margin-bottom: 20px;
-    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -169,20 +176,28 @@ section {
 }
 
 .jumbotron h1 {
-    margin-bottom: 0;
+    color: #fff;
+    margin: 0;
 }
 
 .jumbotron h1 span {
     color: #ccc;
 }
 
+.jumbotron p {
+    color: #fff;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
 .jumbotron a.icon {
     display: inline-block;
+    line-height: 1;
     background-color: #333;
     border: 1px solid #dee2e6;
     border-radius: 50%;
-    line-height: 1;
     padding: 20px;
+    margin-right: 10px;
 }
 
 .jumbotron a.icon:hover {
@@ -192,5 +207,5 @@ section {
 .jumbotron a.icon svg {
     width: 30px;
     height: 30px;
-    fill: #fff;
+    fill: #dee2e6;
 }
