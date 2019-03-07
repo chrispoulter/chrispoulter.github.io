@@ -44,541 +44,469 @@
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="theme-color" content="#222" />
 
-        <link
-            href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/yeti/bootstrap.min.css"
-            rel="stylesheet"
-        />
         <link rel="stylesheet" href="/css/index.css" />
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/"> Chris Poulter </a>
-                <button
-                    class="navbar-toggler"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    aria-label="Toggle navigation"
+        <header>
+            <nav>
+                <a href="/"> Chris Poulter </a>
+                <ul>
+                    <li>
+                        <a href="/#summary">Summary</a>
+                    </li>
+                    <li>
+                        <a href="/#skills">Skills &amp; Expertise</a>
+                    </li>
+                    <li>
+                        <a href="/#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="/#education">Education</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a
+                            href="https://1drv.ms/w/s!Aqcd-hNlGofCqEi_sqKESE-WudCi"
+                            target="_blank"
+                            rel="nofollow noopener"
+                        >
+                            Download My CV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:chris@chrispoulter.com">
+                            Get in Touch
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section id="header">
+                <img src="/images/profile.png" alt="Chris Poulter" />
+                <h1>
+                    Chris Poulter <br />
+                    <span>Web Developer</span>
+                </h1>
+                <p>
+                    I am a web developer based in London. I have over 15 years
+                    of experience developing commercial web based applications
+                    and services using various technologies.
+                </p>
+                <p>
+                    <a
+                        href="https://twitter.com/chrispoulter"
+                        title="Twitter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="icon"
+                    >
+                        <svg>
+                            <use
+                                xlink:href="/images/symbol-defs.svg#icon-twitter"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/chrispoulter"
+                        title="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="icon"
+                    >
+                        <svg>
+                            <use
+                                xlink:href="/images/symbol-defs.svg#icon-linkedin"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://github.com/chrispoulter"
+                        title="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="icon"
+                    >
+                        <svg>
+                            <use
+                                xlink:href="/images/symbol-defs.svg#icon-github"
+                            ></use>
+                        </svg>
+                    </a>
+                </p>
+            </section>
+        </div>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <hr />
+            <p>
+                Over the course of the past 15 years I have worked for several
+                companies in various web developer roles. This has involved the
+                maintenance and continued development of commercial web sites
+                and online products. I currently work for a company called
+                <a
+                    href="https://www.perfectchannel.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Perfect Channel</a
+                >, who are experts in creating intelligent, enterprise-level
+                auction and trading technologies.
+            </p>
+            <p>
+                I have commercial experience working with technologies such as
+                C#, .NET, Node.js, JavaScript and React. This has involved
+                personally developing architecture and applications and also, in
+                my more senior roles, guiding and assisting other developers. I
+                currently work in a development environment that employs an
+                agile approach using the Scrum framework. This includes test
+                driven development, code reviews and continuous deployment.
+            </p>
+            <p>
+                My aim for the future is to expand on the knowledge base I
+                currently have and continue to be involved in the architecture
+                and design of web based applications from the ground up.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills &amp; Expertise</h2>
+            <hr />
+
+            <h3>Top Skills</h3>
+            <div class="card-deck">
+                <div class="card">
+                    <h4>
+                        .NET<br />
+                        <span>Expert, 10+ years</span>
+                    </h4>
+                </div>
+                <div class="card">
+                    <h4>
+                        SQL Server<br />
+                        <span>Expert, 10+ years</span>
+                    </h4>
+                </div>
+                <div class="card">
+                    <h4>
+                        JavaScript<br />
+                        <span>Expert, 10+ years</span>
+                    </h4>
+                </div>
+            </div>
+
+            <h3>Other Skills</h3>
+            <p class="badge-list">
+                <span>C#</span>
+                <span>.NET Core</span>
+                <span>Node.js</span>
+                <span>AWS Lambda</span>
+                <span>MySQL</span>
+                <span>DynamoDB</span>
+                <span>Elasticsearch</span>
+                <span>RabbitMQ</span>
+                <span>Docker</span>
+                <span>Serverless</span>
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>CSS</span>
+                <span>Sass</span>
+                <span>Bootstrap</span>
+                <span>Git</span>
+                <span>DevOps</span>
+                <span>TFS</span>
+                <span>Octopus Deploy</span>
+                <span>CI/CD</span>
+                <span>xUnit</span>
+                <span>NUnit</span>
+                <span>SpecFlow</span>
+                <span>TDD</span>
+                <span>Agile</span>
+                <span>Scrum</span>
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <hr />
+
+            <h3>
+                Perfect Channel <br />
+                <span>Senior Developer</span>
+            </h3>
+            <p>
+                <span class="badge">2017 - Present</span>
+            </p>
+            <p>
+                Perfect Channel are experts in creating intelligent,
+                enterprise-level auction and trading technologies. Customers
+                include Christie's, Lloyds of London, TMX Group (Agriclear) and
+                Fonterra (Global Diary Trade).
+            </p>
+            <ul>
+                <li>
+                    Part of POC/Labs team, responsible for creating new
+                    architectures and solutions based on client requirements and
+                    future expectations.
+                </li>
+                <li>
+                    Involved in the refactoring of the company's existing
+                    monolith product into a microservice architecture hosted on
+                    AWS cloud services.
+                </li>
+                <li>
+                    Created microservices using a serverless architecture.
+                    Technologies used include AWS Lambda, Node.js, .NET Core,
+                    MySQL, DynamoDB and Elasticsearch.
+                </li>
+                <li>
+                    Involved in the company’s adoption of React and TypeScript
+                    as their primary UI technology.
+                </li>
+                <li>
+                    Team of 4 developers that employ an agile approach using the
+                    Scrum framework. This includes code reviews and continuous
+                    deployment.
+                </li>
+            </ul>
+            <hr />
+
+            <h3>
+                Orbus Software <br />
+                <span>Software Developer</span>
+            </h3>
+            <p><span class="badge">2014 - 2017</span></p>
+            <p>
+                Orbus Software is an independent software vendor and a leading
+                global provider of software solutions for enterprise
+                architecture. Clients include Deloitte, Barclays and Cathay
+                Pacific.
+            </p>
+            <ul>
+                <li>
+                    Developed for and maintained the company's enterprise
+                    architecture platform. Technologies used include .NET Web
+                    API, SQL Server, AngularJS and TypeScript.
+                </li>
+                <li>
+                    Green field project making use of a service based
+                    architecture and a single page web application.
+                </li>
+                <li>
+                    Created various product integrations for services such as
+                    SharePoint, Azure AD and Office 365.
+                </li>
+                <li>
+                    Responsible for all aspects of DevOps. This included
+                    implementing a release management pipeline using TFS and
+                    hosting on Azure cloud services.
+                </li>
+                <li>
+                    Team of 6 developers that employed an agile approach using
+                    the Scrum framework. This included code reviews and
+                    continuous deployment.
+                </li>
+            </ul>
+            <hr />
+
+            <h3>
+                DC Thomson Family History <br />
+                <span>Web Developer</span>
+            </h3>
+            <p><span class="badge">2010 - 2014</span></p>
+            <p>
+                DC Thomson Family History is a world leader in online genealogy.
+                The company own brands such as FindMyPast and Genes Reunited.
+                These brands have over 18 million registered users and provide
+                access to over 1.8 billion genealogy records.
+            </p>
+            <ul>
+                <li>
+                    Developed for and maintained a host of brand web sites. All
+                    of the web sites were public facing, high traffic and high
+                    volume. Technologies used include .NET MVC and SQL Server.
+                </li>
+                <li>
+                    Involved in a mixture of green and brown field projects and
+                    developments.
+                </li>
+                <li>
+                    Experience with multiple ORMs including Entity Framework and
+                    NHibernate.
+                </li>
+                <li>
+                    Emphasis on database and code optimization and performance.
+                </li>
+                <li>
+                    Team of 5 developers that employed an agile approach using
+                    the Scrum framework. This included test driven development,
+                    pair programming and continuous deployment.
+                </li>
+            </ul>
+            <p>
+                Projects:
+                <a
+                    href="http://www.findmypast.co.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >FindMyPast</a
+                >,
+                <a
+                    href="http://www.genesreunited.co.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Genes Reunited</a
+                >,
+                <a
+                    href="http://www.britishnewspaperarchive.co.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >The British Newspaper Archive</a
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#summary">Summary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#skills"
-                                >Skills &amp; Expertise</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#experience"
-                                >Experience</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#education">Education</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="https://1drv.ms/w/s!Aqcd-hNlGofCqEi_sqKESE-WudCi"
-                                target="_blank"
-                                rel="nofollow noopener"
-                            >
-                                Download My CV
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="mailto:chris@chrispoulter.com"
-                            >
-                                Get in Touch
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </p>
+            <hr />
 
-        <div class="jumbotron clearfix">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-8 text-center">
-                        <img
-                            src="/images/profile.png"
-                            alt="Chris Poulter"
-                            class="img-thumbnail rounded-circle"
-                        />
-                        <h1 class="display-6">
-                            Chris Poulter <br />
-                            <small class="text-muted">Web Developer</small>
-                        </h1>
-                        <p class="lead">
-                            I am a web developer based in London. I have over 15
-                            years of experience developing commercial web based
-                            applications and services using various
-                            technologies.
-                        </p>
-                        <p>
-                            <a
-                                href="https://twitter.com/chrispoulter"
-                                title="Twitter"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon img-thumbnail rounded-circle mr-2"
-                            >
-                                <svg>
-                                    <use
-                                        xlink:href="/images/symbol-defs.svg#icon-twitter"
-                                    ></use>
-                                </svg>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/chrispoulter"
-                                title="LinkedIn"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon img-thumbnail rounded-circle mr-2"
-                            >
-                                <svg>
-                                    <use
-                                        xlink:href="/images/symbol-defs.svg#icon-linkedin"
-                                    ></use>
-                                </svg>
-                            </a>
-                            <a
-                                href="https://github.com/chrispoulter"
-                                title="GitHub"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon img-thumbnail rounded-circle"
-                            >
-                                <svg>
-                                    <use
-                                        xlink:href="/images/symbol-defs.svg#icon-github"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <h3>
+                Pelagon <br />
+                <span>
+                    Senior Developer <br />
+                    .NET Developer
+                </span>
+            </h3>
+            <p><span class="badge">2008 - 2010</span></p>
+            <p>
+                Pelagon provide a web based activity management platform for
+                digital marketing agencies. Clients include the worldwide
+                advertising agencies McCann and DDB.
+            </p>
+            <ul>
+                <li>
+                    Originally hired as a .NET Developer, progressed to become a
+                    Senior Developer.
+                </li>
+                <li>
+                    Developed for and maintained the company's activity
+                    management platform. Technologies used include .NET MVC,
+                    .NET Web Forms and SQL Server.
+                </li>
+                <li>
+                    Involved in the complete redesign of the platform from the
+                    ground up to make use of newer technologies. This included a
+                    service based architecture and a single page AJAX UI using
+                    JQuery.
+                </li>
+                <li>
+                    Created mobile UI with responsive design for new platform.
+                    This involved researching the available mobile technologies
+                    at the time, such as the first generation of smart phones.
+                </li>
+                <li>
+                    Team of 6 developers that employed an agile approach using
+                    the Scrum framework. This included code reviews and
+                    continuous deployment.
+                </li>
+            </ul>
+            <hr />
 
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-8">
-                    <section id="summary">
-                        <h2>Summary</h2>
-                        <hr />
-                        <p>
-                            Over the course of the past 15 years I have worked
-                            for several companies in various web developer
-                            roles. This has involved the maintenance and
-                            continued development of commercial web sites and
-                            online products. I currently work for a company
-                            called
-                            <a
-                                href="https://www.perfectchannel.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Perfect Channel</a
-                            >, who are experts in creating intelligent,
-                            enterprise-level auction and trading technologies.
-                        </p>
-                        <p>
-                            I have commercial experience working with
-                            technologies such as C#, .NET, Node.js, JavaScript
-                            and React. This has involved personally developing
-                            architecture and applications and also, in my more
-                            senior roles, guiding and assisting other
-                            developers. I currently work in a development
-                            environment that employs an agile approach using the
-                            Scrum framework. This includes test driven
-                            development, code reviews and continuous deployment.
-                        </p>
-                        <p>
-                            My aim for the future is to expand on the knowledge
-                            base I currently have and continue to be involved in
-                            the architecture and design of web based
-                            applications from the ground up.
-                        </p>
-                    </section>
+            <h3>
+                Interactive Prospect Targeting <br />
+                <span>
+                    Development and Support Team Leader <br />
+                    Web and Database Developer
+                </span>
+            </h3>
+            <p><span class="badge">2004 - 2007</span></p>
+            <p>
+                Interactive Prospect Targeting is the UK's leading online direct
+                marketing solutions provider. The company own brands such as
+                MyOffers and Quiz Factor.
+            </p>
+            <ul>
+                <li>
+                    Originally hired as a summer intern, progressed to become a
+                    Web and Database Developer and then a Development and
+                    Support Team Leader.
+                </li>
+                <li>
+                    Developed for and maintained a host of brand web sites. All
+                    of the web sites were public facing, high traffic and high
+                    volume. Technologies used include .NET Web Forms, classic
+                    ASP and SQL Server.
+                </li>
+                <li>
+                    Emphasis on database and code optimization and performance.
+                </li>
+                <li>
+                    Involved in the company's migration to the .NET platform.
+                    This included the redevelopment of applications and internal
+                    admin tools using .NET Web Forms and the adoption of new
+                    coding and automated testing standards.
+                </li>
+                <li>
+                    As Development and Support Team leader I was responsible for
+                    leading a team of 5 developers. My duties included the break
+                    down and organization of development tasks for the team.
+                </li>
+            </ul>
+            <p>
+                Projects:
+                <a
+                    href="http://www.myoffers.co.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >MyOffers</a
+                >
+            </p>
+            <hr />
 
-                    <section id="skills">
-                        <h2>Skills &amp; Expertise</h2>
-                        <hr />
+            <h3>
+                Reed <br />
+                <span>Junior Developer</span>
+            </h3>
+            <p><span class="badge">2002 - 2003</span></p>
+            <p>
+                Reed is the UK's number 1 job agency with over 3.6 million
+                people using their services on a monthly basis.
+            </p>
+            <ul>
+                <li>
+                    Industrial work placement that formed part of my degree
+                    course.
+                </li>
+                <li>
+                    Developed for and maintained the company's client timesheet
+                    management application and internal admin tools.
+                    Technologies used include classic ASP and SQL Server.
+                </li>
+                <li>
+                    Created mobile version of the client timesheet management
+                    application using .NET Web Forms and Microsoft's Mobile
+                    Internet Toolkit. This involved researching the available
+                    mobile technologies at the time, such as the emerging use of
+                    WAP as a web standard.
+                </li>
+            </ul>
+        </section>
 
-                        <h3>Top Skills</h3>
+        <section id="education">
+            <h2>Education</h2>
+            <hr />
 
-                        <div class="card-deck mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">.NET</h5>
-                                    <p class="card-text">Expert, 10+ years</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">SQL Server</h5>
-                                    <p class="card-text">Expert, 10+ years</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">JavaScript</h5>
-                                    <p class="card-text">Expert, 10+ years</p>
-                                </div>
-                            </div>
-                        </div>
+            <h3>
+                BSc (Hons) Computer Science, 2:1 <br />
+                <span class="text-muted">Kingston University</span>
+            </h3>
+            <p><span class="badge">2000 - 2004</span></p>
+        </section>
 
-                        <h3>Other Skills</h3>
-                        <p class="text-center">
-                            <span class="badge badge-info mb-1">C#</span>
-                            <span class="badge badge-info mb-1">.NET Core</span>
-                            <span class="badge badge-info mb-1">Node.js</span>
-                            <span class="badge badge-info mb-1"
-                                >AWS Lambda</span
-                            >
-                            <span class="badge badge-info mb-1">MySQL</span>
-                            <span class="badge badge-info mb-1">DynamoDB</span>
-                            <span class="badge badge-info mb-1"
-                                >Elasticsearch</span
-                            >
-                            <span class="badge badge-info mb-1">RabbitMQ</span>
-                            <span class="badge badge-info mb-1">Docker</span>
-                            <span class="badge badge-info mb-1"
-                                >Serverless</span
-                            >
-                            <span class="badge badge-info mb-1">AWS</span>
-                            <span class="badge badge-info mb-1">Azure</span>
-                            <span class="badge badge-info mb-1">React</span>
-                            <span class="badge badge-info mb-1"
-                                >TypeScript</span
-                            >
-                            <span class="badge badge-info mb-1">CSS</span>
-                            <span class="badge badge-info mb-1">Sass</span>
-                            <span class="badge badge-info mb-1">Bootstrap</span>
-                            <span class="badge badge-info mb-1">Git</span>
-                            <span class="badge badge-info mb-1">DevOps</span>
-                            <span class="badge badge-info mb-1">TFS</span>
-                            <span class="badge badge-info mb-1"
-                                >Octopus Deploy</span
-                            >
-                            <span class="badge badge-info mb-1">CI/CD</span>
-                            <span class="badge badge-info mb-1">xUnit</span>
-                            <span class="badge badge-info mb-1">NUnit</span>
-                            <span class="badge badge-info mb-1">SpecFlow</span>
-                            <span class="badge badge-info mb-1">TDD</span>
-                            <span class="badge badge-info mb-1">Agile</span>
-                            <span class="badge badge-info mb-1">Scrum</span>
-                        </p>
-                    </section>
-
-                    <section id="experience">
-                        <h2>Experience</h2>
-                        <hr />
-
-                        <h3>
-                            Perfect Channel <br />
-                            <small class="text-muted">Senior Developer</small>
-                        </h3>
-                        <p>
-                            <span class="badge badge-info">2017 - Present</span>
-                        </p>
-                        <p>
-                            Perfect Channel are experts in creating intelligent,
-                            enterprise-level auction and trading technologies.
-                            Customers include Christie's, Lloyds of London, TMX
-                            Group (Agriclear) and Fonterra (Global Diary Trade).
-                        </p>
-                        <ul>
-                            <li>
-                                Part of POC/Labs team, responsible for creating
-                                new architectures and solutions based on client
-                                requirements and future expectations.
-                            </li>
-                            <li>
-                                Involved in the refactoring of the company's
-                                existing monolith product into a microservice
-                                architecture hosted on AWS cloud services.
-                            </li>
-                            <li>
-                                Created microservices using a serverless
-                                architecture. Technologies used include AWS
-                                Lambda, Node.js, .NET Core, MySQL, DynamoDB and
-                                Elasticsearch.
-                            </li>
-                            <li>
-                                Involved in the company’s adoption of React and
-                                TypeScript as their primary UI technology.
-                            </li>
-                            <li>
-                                Team of 4 developers that employ an agile
-                                approach using the Scrum framework. This
-                                includes code reviews and continuous deployment.
-                            </li>
-                        </ul>
-                        <hr />
-
-                        <h3>
-                            Orbus Software <br />
-                            <small class="text-muted">Software Developer</small>
-                        </h3>
-                        <p><span class="badge badge-info">2014 - 2017</span></p>
-                        <p>
-                            Orbus Software is an independent software vendor and
-                            a leading global provider of software solutions for
-                            enterprise architecture. Clients include Deloitte,
-                            Barclays and Cathay Pacific.
-                        </p>
-                        <ul>
-                            <li>
-                                Developed for and maintained the company's
-                                enterprise architecture platform. Technologies
-                                used include .NET Web API, SQL Server, AngularJS
-                                and TypeScript.
-                            </li>
-                            <li>
-                                Green field project making use of a service
-                                based architecture and a single page web
-                                application.
-                            </li>
-                            <li>
-                                Created various product integrations for
-                                services such as SharePoint, Azure AD and Office
-                                365.
-                            </li>
-                            <li>
-                                Responsible for all aspects of DevOps. This
-                                included implementing a release management
-                                pipeline using TFS and hosting on Azure cloud
-                                services.
-                            </li>
-                            <li>
-                                Team of 6 developers that employed an agile
-                                approach using the Scrum framework. This
-                                included code reviews and continuous deployment.
-                            </li>
-                        </ul>
-                        <hr />
-
-                        <h3>
-                            DC Thomson Family History <br />
-                            <small class="text-muted">Web Developer</small>
-                        </h3>
-                        <p><span class="badge badge-info">2010 - 2014</span></p>
-                        <p>
-                            DC Thomson Family History is a world leader in
-                            online genealogy. The company own brands such as
-                            FindMyPast and Genes Reunited. These brands have
-                            over 18 million registered users and provide access
-                            to over 1.8 billion genealogy records.
-                        </p>
-                        <ul>
-                            <li>
-                                Developed for and maintained a host of brand web
-                                sites. All of the web sites were public facing,
-                                high traffic and high volume. Technologies used
-                                include .NET MVC and SQL Server.
-                            </li>
-                            <li>
-                                Involved in a mixture of green and brown field
-                                projects and developments.
-                            </li>
-                            <li>
-                                Experience with multiple ORMs including Entity
-                                Framework and NHibernate.
-                            </li>
-                            <li>
-                                Emphasis on database and code optimization and
-                                performance.
-                            </li>
-                            <li>
-                                Team of 5 developers that employed an agile
-                                approach using the Scrum framework. This
-                                included test driven development, pair
-                                programming and continuous deployment.
-                            </li>
-                        </ul>
-                        <p>
-                            Projects:
-                            <a
-                                href="http://www.findmypast.co.uk"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >FindMyPast</a
-                            >,
-                            <a
-                                href="http://www.genesreunited.co.uk"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Genes Reunited</a
-                            >,
-                            <a
-                                href="http://www.britishnewspaperarchive.co.uk"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >The British Newspaper Archive</a
-                            >
-                        </p>
-                        <hr />
-
-                        <h3>
-                            Pelagon <br />
-                            <small class="text-muted">
-                                Senior Developer <br />
-                                .NET Developer
-                            </small>
-                        </h3>
-                        <p><span class="badge badge-info">2008 - 2010</span></p>
-                        <p>
-                            Pelagon provide a web based activity management
-                            platform for digital marketing agencies. Clients
-                            include the worldwide advertising agencies McCann
-                            and DDB.
-                        </p>
-                        <ul>
-                            <li>
-                                Originally hired as a .NET Developer, progressed
-                                to become a Senior Developer.
-                            </li>
-                            <li>
-                                Developed for and maintained the company's
-                                activity management platform. Technologies used
-                                include .NET MVC, .NET Web Forms and SQL Server.
-                            </li>
-                            <li>
-                                Involved in the complete redesign of the
-                                platform from the ground up to make use of newer
-                                technologies. This included a service based
-                                architecture and a single page AJAX UI using
-                                JQuery.
-                            </li>
-                            <li>
-                                Created mobile UI with responsive design for new
-                                platform. This involved researching the
-                                available mobile technologies at the time, such
-                                as the first generation of smart phones.
-                            </li>
-                            <li>
-                                Team of 6 developers that employed an agile
-                                approach using the Scrum framework. This
-                                included code reviews and continuous deployment.
-                            </li>
-                        </ul>
-                        <hr />
-
-                        <h3>
-                            Interactive Prospect Targeting <br />
-                            <small class="text-muted">
-                                Development and Support Team Leader <br />
-                                Web and Database Developer
-                            </small>
-                        </h3>
-                        <p><span class="badge badge-info">2004 - 2007</span></p>
-                        <p>
-                            Interactive Prospect Targeting is the UK's leading
-                            online direct marketing solutions provider. The
-                            company own brands such as MyOffers and Quiz Factor.
-                        </p>
-                        <ul>
-                            <li>
-                                Originally hired as a summer intern, progressed
-                                to become a Web and Database Developer and then
-                                a Development and Support Team Leader.
-                            </li>
-                            <li>
-                                Developed for and maintained a host of brand web
-                                sites. All of the web sites were public facing,
-                                high traffic and high volume. Technologies used
-                                include .NET Web Forms, classic ASP and SQL
-                                Server.
-                            </li>
-                            <li>
-                                Emphasis on database and code optimization and
-                                performance.
-                            </li>
-                            <li>
-                                Involved in the company's migration to the .NET
-                                platform. This included the redevelopment of
-                                applications and internal admin tools using .NET
-                                Web Forms and the adoption of new coding and
-                                automated testing standards.
-                            </li>
-                            <li>
-                                As Development and Support Team leader I was
-                                responsible for leading a team of 5 developers.
-                                My duties included the break down and
-                                organization of development tasks for the team.
-                            </li>
-                        </ul>
-                        <p>
-                            Projects:
-                            <a
-                                href="http://www.myoffers.co.uk"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >MyOffers</a
-                            >
-                        </p>
-                        <hr />
-
-                        <h3>
-                            Reed <br />
-                            <small class="text-muted">Junior Developer</small>
-                        </h3>
-                        <p><span class="badge badge-info">2002 - 2003</span></p>
-                        <p>
-                            Reed is the UK's number 1 job agency with over 3.6
-                            million people using their services on a monthly
-                            basis.
-                        </p>
-                        <ul>
-                            <li>
-                                Industrial work placement that formed part of my
-                                degree course.
-                            </li>
-                            <li>
-                                Developed for and maintained the company's
-                                client timesheet management application and
-                                internal admin tools. Technologies used include
-                                classic ASP and SQL Server.
-                            </li>
-                            <li>
-                                Created mobile version of the client timesheet
-                                management application using .NET Web Forms and
-                                Microsoft's Mobile Internet Toolkit. This
-                                involved researching the available mobile
-                                technologies at the time, such as the emerging
-                                use of WAP as a web standard.
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section id="education">
-                        <h2>Education</h2>
-                        <hr />
-
-                        <h3>
-                            BSc (Hons) Computer Science, 2:1 <br />
-                            <small class="text-muted"
-                                >Kingston University</small
-                            >
-                        </h3>
-                        <p><span class="badge badge-info">2000 - 2004</span></p>
-                    </section>
-
-                    <p>&copy; <a href="/">Chris Poulter</a> 2018</p>
-                </div>
-            </div>
-        </div>
+        <footer>
+            <p>&copy; <a href="/">Chris Poulter</a> 2018</p>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
