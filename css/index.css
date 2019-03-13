@@ -140,10 +140,9 @@ nav {
     padding: 5px;
 }
 
-#toggler svg {
+#toggler img {
     width: 30px;
     height: 30px;
-    fill: #eee;
 }
 
 #toggler:hover {
@@ -186,7 +185,7 @@ nav ul a {
     text-align: center;
 }
 
-.jumbotron img {
+.jumbotron .profile {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -222,10 +221,9 @@ nav ul a {
     opacity: 0.75;
 }
 
-.jumbotron a.icon svg {
+.jumbotron a.icon img {
     width: 30px;
     height: 30px;
-    fill: #eee;
 }
 
 nav,
