@@ -73,7 +73,7 @@ ul {
     color: #fff;
     background-color: #008cba;
     border: 1px solid #006f94;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .btn:hover {
@@ -81,7 +81,6 @@ ul {
     text-decoration: none;
 }
 
-.badge-list span,
 .badge {
     display: inline-block;
     background-color: #5bc0de;
@@ -93,7 +92,7 @@ ul {
     text-align: center;
 }
 
-.badge-list span {
+.badge-list .badge {
     margin-bottom: 10px;
 }
 
@@ -159,7 +158,6 @@ nav a {
 }
 
 nav a:hover {
-    opacity: 1;
     text-decoration: none;
 }
 
@@ -171,7 +169,11 @@ nav ul {
 
 nav ul a {
     font-size: 0.8rem;
-    opacity: 0.7;
+    color: #ccc;
+}
+
+nav ul a:hover {
+    color: #eee;
 }
 
 .jumbotron {
@@ -248,14 +250,12 @@ section {
     nav,
     footer,
     section {
-        margin: 0 auto;
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
     nav {
-        margin: 0 auto;
         max-width: 960px;
     }
 
