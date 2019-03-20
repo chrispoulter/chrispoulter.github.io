@@ -98,16 +98,25 @@ ul {
 
 .card-deck {
     display: flex;
-    flex-flow: row wrap;
     margin-bottom: 20px;
 }
 
 .card {
     flex: 1;
     border: 1px solid #eee;
-    white-space: nowrap;
     padding: 0 20px;
     margin: 0 10px 10px 0;
+}
+
+footer,
+section {
+    max-width: 748px;
+}
+
+nav,
+footer,
+section {
+    margin: 0 auto;
 }
 
 header {
@@ -124,18 +133,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#menu {
-    flex-basis: 100%;
-}
-
-#menu.collapsed {
-    display: none;
+    max-width: 960px;
 }
 
 #toggler {
-    display: inline-block;
+    display: none;
     cursor: pointer;
     line-height: 1;
     padding: 5px;
@@ -151,6 +153,12 @@ nav {
     opacity: 0.75;
 }
 
+#menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
 nav a {
     display: block;
     color: #fff;
@@ -163,9 +171,14 @@ nav a:hover {
 }
 
 nav ul {
+    display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+nav li {
+    display: inline-block;
 }
 
 nav ul a {
@@ -232,47 +245,33 @@ nav ul a:hover {
     fill: #eee;
 }
 
-nav,
-footer,
-section {
-    margin: 0 20px;
-}
-
-@media (min-width: 576px) {
+@media (max-width: 768px) {
     nav,
     footer,
     section {
-        margin: 0 auto;
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    nav,
-    footer,
-    section {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    nav {
-        max-width: 960px;
+        margin: 0 20px;
     }
 
     #toggler {
-        display: none;
+        display: inline-block;
     }
 
-    #menu,
-    #menu.collapsed {
-        display: flex;
-        flex: 1;
-        justify-content: space-between;
+    #menu {
+        flex-basis: 100%;
+        flex-direction: column;
     }
 
     #menu ul,
-    #menu ul li {
-        display: inline-block;
+    #menu ul li,
+    #menu ul li a {
+        display: block;
+    }
+
+    #menu.collapsed {
+        display: none;
+    }
+
+    .card-deck {
+        flex-direction: column;
     }
 }
