@@ -136,6 +136,7 @@ nav {
 
 #toggler {
     display: inline-block;
+    cursor: pointer;
     line-height: 1;
     padding: 5px;
 }
