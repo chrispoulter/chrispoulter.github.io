@@ -64,7 +64,7 @@ a:hover {
 
 hr {
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ddd;
     margin: 0 0 20px 0;
 }
 
@@ -99,7 +99,7 @@ nav a.brand:hover {
 }
 
 nav ul a {
-    color: rgba(255, 255, 255, 0.7);
+    color: #ddd;
     text-decoration: none;
     font-size: 0.82rem;
     font-weight: 300;
@@ -113,7 +113,7 @@ nav ul a:hover {
 
 .cover {
     color: #fff;
-    background-color: #444;
+    background-color: #333;
     border-bottom: 2px solid #333;
     background-image: url(/images/cover.jpg);
     background-position: center;
@@ -125,7 +125,7 @@ nav ul a:hover {
 }
 
 .jumbotron h1 small {
-    color: rgba(255, 255, 255, 0.7);
+    color: #ddd;
 }
 
 .jumbotron p {
@@ -187,7 +187,7 @@ nav ul a:hover {
     display: flex;
     flex: 1 0 0%;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
     padding: 20px;
     margin: 0 5px 5px 5px;
 }
