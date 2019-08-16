@@ -111,7 +111,7 @@ hr {
 
 header nav,
 .cover .jumbotron,
-.content,
+.container,
 footer {
     max-width: 720px;
     margin: 0 auto;
@@ -202,21 +202,21 @@ header nav .nav-menu a:hover {
     height: 60px;
 }
 
-.content {
+.container {
 }
 
-.content .row {
+.container .row {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 576px) {
-    .content .row {
+    .container .row {
         flex-direction: row;
     }
 }
 
-.content .row > * {
+.container .row > * {
     display: flex;
     flex: 1 0 0%;
     flex-direction: column;
