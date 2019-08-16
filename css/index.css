@@ -109,8 +109,8 @@ hr {
 
 /*********************** layout ***********************/
 
-header nav,
-.cover .jumbotron,
+nav,
+.jumbotron,
 .container,
 footer {
     max-width: 720px;
@@ -126,28 +126,28 @@ header {
     left: 0;
 }
 
-header nav {
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-header nav .brand {
+.brand {
     color: #fff;
     font-size: 1.17rem;
     font-weight: 300;
     white-space: nowrap;
 }
 
-header nav .brand:hover {
+.brand:hover {
     text-decoration: none;
 }
 
-header nav .nav-menu {
+.nav-menu {
     display: inline-block;
     white-space: nowrap;
 }
 
-header nav .nav-menu a {
+.nav-menu a {
     color: #ddd;
     text-decoration: none;
     font-size: 0.82rem;
@@ -155,7 +155,7 @@ header nav .nav-menu a {
     margin: 0 0 0 15px;
 }
 
-header nav .nav-menu a:hover {
+.nav-menu a:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -172,56 +172,50 @@ header nav .nav-menu a:hover {
     margin: 0 0 20px 0;
 }
 
-.cover .jumbotron {
+.jumbotron {
     text-align: center;
 }
 
-.cover .jumbotron h1 small {
+.jumbotron h1 small {
     color: #ddd;
 }
 
-.cover .jumbotron p {
+.jumbotron p {
     font-size: 1.17rem;
     font-weight: 300;
 }
 
-.cover .jumbotron .profile {
+.profile {
     border: 5px solid #fff;
     width: 180px;
     height: 180px;
     border-radius: 50%;
 }
 
-.cover .jumbotron .icon:hover {
+.icon:hover {
     opacity: 0.75;
     text-decoration: none;
 }
 
-.cover .jumbotron .icon img {
+.icon img {
     width: 60px;
     height: 60px;
 }
 
-.container {
-}
-
-.container .row {
+.row {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 576px) {
-    .container .row {
+    .row {
         flex-direction: row;
     }
 }
 
-.container .row > * {
+.row > * {
     display: flex;
     flex: 1 0 0%;
     flex-direction: column;
     margin: 5px 5px 15px 5px;
-}
-
-footer {
 }
