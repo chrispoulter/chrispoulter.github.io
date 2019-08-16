@@ -1,20 +1,25 @@
+/*********************** base ***********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     font-family: Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     color: #222;
     font-size: 0.93rem;
     font-weight: 400;
     line-height: 1.5;
-    margin: 0;
-    padding: 0;
 }
 
-header nav,
-section,
-.jumbotron,
-footer {
-    margin: 0 auto;
-    max-width: 720px;
-    padding: 10px 15px;
+p {
+    margin: 0 0 15px 0;
+}
+
+ul {
+    margin: 0 0 15px 40px;
 }
 
 h1,
@@ -23,7 +28,7 @@ h3,
 h4 {
     font-weight: 300;
     line-height: 1.2;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
 }
 
 h1 {
@@ -61,7 +66,56 @@ a:hover {
 hr {
     border: 0;
     border-top: 1px solid #ddd;
-    margin: 0 0 20px 0;
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #008cba;
+    font-size: 1.17rem;
+    line-height: 1.5;
+    padding: 5px 15px;
+}
+
+.btn:hover {
+    background-color: #006f94;
+    text-decoration: none;
+}
+
+.badge {
+    display: inline-block;
+    color: #fff;
+    background-color: #5bc0de;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    margin: 0 0 15px 0;
+}
+
+.badge-list {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.badge-list .badge {
+    margin: 0 0 5px 0;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+/*********************** layout ***********************/
+
+header nav,
+.cover .jumbotron,
+.content,
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 10px 15px;
 }
 
 header {
@@ -72,37 +126,36 @@ header {
     left: 0;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-}
-
-nav a.brand {
+header nav .brand {
     color: #fff;
     font-size: 1.17rem;
     font-weight: 300;
     white-space: nowrap;
 }
 
-nav a.brand:hover {
+header nav .brand:hover {
     text-decoration: none;
 }
 
-nav ul a {
+header nav .nav-menu {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+header nav .nav-menu a {
     color: #ddd;
     text-decoration: none;
     font-size: 0.82rem;
     font-weight: 300;
-    margin: 0 10px;
+    margin: 0 0 0 15px;
 }
 
-nav ul a:hover {
+header nav .nav-menu a:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -116,80 +169,60 @@ nav ul a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 75px 0 0 0;
-    margin-bottom: 20px;
+    padding: 60px 0 0 0;
+    margin: 0 0 20px 0;
 }
 
-.jumbotron h1 small {
+.cover .jumbotron {
+    text-align: center;
+}
+
+.cover .jumbotron h1 small {
     color: #ddd;
 }
 
-.jumbotron p {
+.cover .jumbotron p {
     font-size: 1.17rem;
     font-weight: 300;
 }
 
-.profile {
+.cover .jumbotron .profile {
     border: 5px solid #fff;
     width: 180px;
     height: 180px;
     border-radius: 50%;
 }
 
-.icon:hover {
+.cover .jumbotron .icon:hover {
     opacity: 0.75;
     text-decoration: none;
 }
 
-.icon img {
+.cover .jumbotron .icon img {
     width: 60px;
     height: 60px;
 }
 
-.btn {
-    display: inline-block;
-    color: #fff;
-    background-color: #008cba;
-    font-size: 1.17rem;
-    line-height: 1.5;
-    padding: 10px 20px;
+.content {
 }
 
-.btn:hover {
-    background-color: #006f94;
-    text-decoration: none;
-}
-
-.badge-list {
-    text-align: center;
-}
-
-.badge {
-    display: inline-block;
-    color: #fff;
-    background-color: #5bc0de;
-    font-size: 0.9rem;
-    padding: 5px 15px;
-    margin-bottom: 5px;
-}
-
-.card-deck {
+.content .row {
     display: flex;
-    margin: 0 0 20px 0;
     flex-direction: column;
-}
-
-.card-deck .card {
-    display: flex;
-    flex: 1 0 0%;
-    flex-direction: column;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 0 5px 5px 5px;
 }
 
 @media (min-width: 576px) {
-    .card-deck {
+    .content .row {
         flex-direction: row;
     }
+}
+
+.content .row > * {
+    display: flex;
+    flex: 1 0 0%;
+    flex-direction: column;
+    margin: 5px 5px 15px 5px;
+}
+
+footer {
 }
