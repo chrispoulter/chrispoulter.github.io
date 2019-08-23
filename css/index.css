@@ -131,7 +131,6 @@ header {
     color: #fff;
     font-size: 1.17rem;
     font-weight: 300;
-    text-align: center;
 }
 
 .brand:hover {
@@ -139,8 +138,7 @@ header {
 }
 
 .nav-menu {
-    display: block;
-    text-align: center;
+    display: none;
 }
 
 .nav-menu a {
@@ -202,6 +200,10 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
+    }
+
+    .nav-menu {
+        display: block;
     }
 
     .row {
