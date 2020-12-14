@@ -83,13 +83,17 @@
 
         <div class="cover">
             <div class="jumbotron">
-                <img
-                    src="/images/profile.png"
-                    alt="Chris Poulter"
-                    class="profile"
-                    width="180"
-                    height="180"
-                />
+                <picture>
+                    <source type="image/webp" srcset="/images/profile.webp" />
+                    <source type="image/png" srcset="/images/profile.png" />
+                    <img
+                        src="/images/profile.png"
+                        alt="Chris Poulter"
+                        class="profile"
+                        width="180"
+                        height="180"
+                    />
+                </picture>
                 <h1>
                     Chris Poulter <br />
                     <small>Web Developer</small>
