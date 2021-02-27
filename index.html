@@ -522,12 +522,19 @@
             <p>&copy; <a href="/">Chris Poulter</a> 2019</p>
         </footer>
 
-        <!-- Cloudflare Web Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
-            defer
-            src="https://static.cloudflareinsights.com/beacon.min.js"
-            data-cf-beacon='{"token": "4c059d9e07a94b41886d18c2f2680695"}'
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-C60J1YEXYV"
         ></script>
-        <!-- End Cloudflare Web Analytics -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-C60J1YEXYV');
+        </script>
     </body>
 </html>
