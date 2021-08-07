@@ -1,0 +1,13 @@
+{
+    "name": "chrispoulter.github.io",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "lite-server",
+        "format": "prettier --write \"**/*.{js,json,css,md,yml,html}\""
+    },
+    "devDependencies": {
+        "lite-server": "2.6.1",
+        "prettier": "2.3.2"
+    }
+}
