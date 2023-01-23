@@ -47,118 +47,53 @@
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="theme-color" content="#333" />
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootswatch@5.0.2/dist/yeti/bootstrap.min.css"
-            integrity="sha256-7Q3FK/6+fu3+JmrBK+ilpFntiTSg75Jm8R1JE9CkSCQ="
-            crossorigin="anonymous"
-        />
-
         <link rel="stylesheet" href="/css/index.css" />
     </head>
 
     <body>
-        <header class="bg-dark">
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-7">
-                        <nav class="navbar navbar-dark navbar-expand-lg">
-                            <a href="/" class="navbar-brand">Chris Poulter</a>
-                            <button
-                                class="navbar-toggler"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavAltMarkup"
-                                aria-controls="navbarSupportedContent"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation"
-                            >
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div
-                                id="navbarNavAltMarkup"
-                                class="collapse navbar-collapse"
-                            >
-                                <div class="navbar-nav ms-auto">
-                                    <a
-                                        href="https://twitter.com/chrispoulter"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="nav-link"
-                                    >
-                                        Twitter
-                                    </a>
-                                    <a
-                                        href="https://www.linkedin.com/in/chrispoulter"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="nav-link"
-                                    >
-                                        LinkedIn
-                                    </a>
-                                    <a
-                                        href="https://github.com/chrispoulter"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="nav-link"
-                                    >
-                                        GitHub
-                                    </a>
-                                    <a
-                                        href="mailto:chris@chrispoulter.com"
-                                        class="nav-link"
-                                    >
-                                        Contact
-                                    </a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
+        <div class="header">
+            <div class="navbar">
+                <a href="/" class="navbar__brand">Chris Poulter</a>
+                <div class="navbar__nav">
+                    <a
+                        href="https://twitter.com/chrispoulter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Twitter</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/chrispoulter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >LinkedIn</a
+                    >
+                    <a
+                        href="https://github.com/chrispoulter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >GitHub</a
+                    >
+                    <a href="mailto:chris@chrispoulter.com">Contact</a>
                 </div>
             </div>
-        </header>
+        </div>
 
-        <section
-            class="
-                cover
-                bg-dark
-                text-light
-                pt-3
-                pb-3
-                mb-3
-                border-bottom border-dark
-            "
-        >
-            <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-7 text-center">
-                        <h1>Page Not Found</h1>
-                        <p class="lead">
-                            Sorry, the Page you were looking for could not be
-                            found.
-                        </p>
-                        <p>
-                            <a class="btn btn-primary btn-lg" href="/">Home</a>
-                        </p>
-                    </div>
-                </div>
+        <div class="cover">
+            <div class="jumbotron">
+                <h1>Page Not Found</h1>
+                <p class="jumbotron__lead">
+                    Sorry, the Page you were looking for could not be found.
+                </p>
+                <p>
+                    <a class="button" href="/">Home</a>
+                </p>
             </div>
-        </section>
+        </div>
 
-        <footer class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-7">
-                    <p class="text-muted">
-                        &copy; <a href="/">Chris Poulter</a> 2021
-                    </p>
-                </div>
+        <div class="container">
+            <div class="section">
+                <p>&copy; <a href="/">Chris Poulter</a> 2023</p>
             </div>
-        </footer>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"
-        ></script>
+        </div>
     </body>
 </html>

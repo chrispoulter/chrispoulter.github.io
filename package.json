@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "start": "lite-server",
-        "format": "prettier --write \"**/*.{js,json,css,md,yml,html}\""
+        "format": "prettier --write ."
     },
     "devDependencies": {
         "lite-server": "2.6.1",
