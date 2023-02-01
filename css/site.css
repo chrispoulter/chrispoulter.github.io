@@ -92,8 +92,10 @@ ul {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
     margin: 0 auto;
     max-width: 40rem;
     padding: 0.5rem 0;
@@ -118,8 +120,23 @@ ul {
     font-weight: 300;
 }
 
+.navbar__toggle {
+    display: none;
+    background-color: inherit;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.navbar__toggle svg {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .navbar__nav a:hover,
-.navbar__brand:hover {
+.navbar__brand:hover,
+.navbar__toggle:hover {
     color: #fff;
 }
 
@@ -230,7 +247,7 @@ ul {
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     .navbar {
         margin: 0 1rem;
         max-width: none;
@@ -248,13 +265,32 @@ ul {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .navbar {
         margin: 0 0.5rem;
     }
 
     .navbar__nav {
         display: none;
+        flex-direction: column;
+        flex-basis: 100%;
+        gap: 0;
+    }
+
+    .navbar__nav.show {
+        display: flex;
+    }
+
+    .navbar__nav a {
+        padding: 0.5rem;
+    }
+
+    .navbar__nav a:hover {
+        background-color: #2e2e2e;
+    }
+
+    .navbar__toggle {
+        display: initial;
     }
 
     .jumbotron {
