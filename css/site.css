@@ -162,6 +162,7 @@ ul {
 }
 
 .jumbotron img {
+    display: inline-block;
     background-color: #dee2e6;
     border: solid 0.1rem #dee2e6;
     border-radius: 50%;
