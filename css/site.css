@@ -285,6 +285,7 @@ ul {
 
     .navbar__nav a {
         padding: 0.5rem;
+        margin-top: 0.2rem;
     }
 
     .navbar__nav a:hover {
