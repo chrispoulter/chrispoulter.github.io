@@ -82,7 +82,8 @@ ul {
     padding: 0.5rem 1rem;
 }
 
-.button:hover {
+.button:hover,
+.button:focus-visible {
     color: #fff;
     background-color: #00779e;
 }
@@ -108,7 +109,7 @@ ul {
 }
 
 .navbar__nav a {
-    color: #ccc;
+    color: rgb(255, 255, 255, 0.7);
     text-decoration: none;
     font-size: 0.82rem;
     font-weight: 300;
@@ -125,7 +126,7 @@ ul {
     display: none;
     background-color: inherit;
     border: none;
-    color: #ccc;
+    color: rgb(255, 255, 255, 0.7);
     cursor: pointer;
 }
 
@@ -136,8 +137,11 @@ ul {
 }
 
 .navbar__nav a:hover,
+.navbar__nav a:focus-visible,
 .navbar__brand:hover,
-.navbar__toggle:hover {
+.navbar__brand:focus-visible,
+.navbar__toggle:hover,
+.navbar__toggle:focus-visible {
     color: #fff;
 }
 
@@ -187,8 +191,9 @@ ul {
     text-decoration: none;
 }
 
-.jumbotron__social a:hover {
-    opacity: 0.75;
+.jumbotron__social a:hover,
+.jumbotron__social a:focus-visible {
+    color: rgb(238, 238, 238, 0.7);
 }
 
 .jumbotron__social a svg {
@@ -288,7 +293,8 @@ ul {
         margin-top: 0.2rem;
     }
 
-    .navbar__nav a:hover {
+    .navbar__nav a:hover,
+    .navbar__nav a:focus-visible {
         background-color: #2e2e2e;
     }
 
