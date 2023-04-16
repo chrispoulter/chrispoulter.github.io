@@ -73,6 +73,7 @@ ul {
 }
 
 .button {
+    display: inline-block;
     background-color: #008cba;
     color: #fff;
     font-size: 1.25rem;
