@@ -284,7 +284,7 @@ ul {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
     .navbar {
-        margin: 0 0.5rem;
+        margin: 0 0.7rem;
     }
 
     .navbar__nav {
@@ -299,7 +299,7 @@ ul {
     }
 
     .navbar__nav a {
-        padding: 0.5rem;
+        padding: 0.7rem;
         margin-top: 0.2rem;
     }
 
@@ -313,11 +313,11 @@ ul {
     }
 
     .jumbotron {
-        margin: 0 0.5rem;
+        margin: 0 0.7rem;
     }
 
     .container {
-        margin: 0.5rem;
+        margin: 0.7rem;
     }
 
     .card-container {
