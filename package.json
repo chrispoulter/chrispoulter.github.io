@@ -1,0 +1,13 @@
+{
+    "name": "@chrispoulter/personal-website",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "lite-server",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "lite-server": "2.6.1",
+        "prettier": "3.3.3"
+    }
+}
