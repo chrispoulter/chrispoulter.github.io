@@ -160,8 +160,7 @@ ul {
     justify-content: center;
     align-items: center;
     min-height: 30rem;
-
-    background-color: #333;
+    background-color: #505050;
     background-image: url(/images/cover.jpg?v=1726043727547);
     background-position: center;
     background-repeat: no-repeat;
