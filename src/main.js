@@ -1,11 +1,12 @@
 var navBar = document.getElementById('navBar');
+var navButton = document.getElementById('navButton');
 var navLinks = document.getElementById('navLinks');
 
-function toggleNavLinks() {
+navButton.onclick = function () {
     navLinks.classList.toggle('show');
-}
+};
 
-function clickOutsideNavBar() {
+function clickOutsideNavBar(event) {
     const isOutsideClick = !navBar.contains(event.target);
 
     if (isOutsideClick) {
