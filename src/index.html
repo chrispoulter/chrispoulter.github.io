@@ -49,21 +49,30 @@
             rel="stylesheet"
         />
 
+        <link href="/style.css" rel="stylesheet" />
     </head>
 
     <body>
-        <header class="header">
-            <nav id="navBar" class="navbar">
-                <a href="/" class="navbar__brand">Chris Poulter</a>
+        <header class="bg-[#333]">
+            <nav
+                id="navBar"
+                class="mx-auto flex max-w-[40rem] flex-wrap items-center justify-between gap-2 py-2"
+            >
+                <a
+                    href="/"
+                    class="text-[1.25rem] font-light text-white no-underline"
+                    >Chris Poulter</a
+                >
                 <button
                     id="navButton"
                     aria-label="Toggle Navigation"
-                    class="navbar__toggle"
+                    class="hidden cursor-pointer border-0 bg-inherit text-[#ffffffb3]"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
                         viewBox="0 0 16 16"
+                        class="block h-6 w-6"
                     >
                         <path
                             fill-rule="evenodd"
@@ -71,59 +80,75 @@
                         />
                     </svg>
                 </button>
-                <div id="navLinks" class="navbar__nav">
+                <div id="navLinks" class="flex gap-4">
                     <a
                         href="https://x.com/chrispoulter"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="text-[0.82rem] font-light text-[#ffffffb3] no-underline"
                         >Twitter</a
                     >
                     <a
                         href="https://www.linkedin.com/in/chrispoulter"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="text-[0.82rem] font-light text-[#ffffffb3] no-underline"
                         >LinkedIn</a
                     >
                     <a
                         href="https://github.com/chrispoulter"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="text-[0.82rem] font-light text-[#ffffffb3] no-underline"
                         >GitHub</a
                     >
-                    <a href="mailto:chris@chrispoulter.com">Contact</a>
+                    <a
+                        href="mailto:chris@chrispoulter.com"
+                        class="text-[0.82rem] font-light text-[#ffffffb3] no-underline"
+                        >Contact</a
+                    >
                 </div>
             </nav>
         </header>
 
         <main>
-            <div class="cover">
-                <section class="jumbotron">
+            <div
+                class="bg-custom flex min-h-[25rem] items-center justify-center"
+            >
+                <section class="mx-auto max-w-[40rem] py-4 text-center">
                     <img
                         src="/profile.jpg"
                         alt="Chris Poulter"
                         width="180"
                         height="180"
+                        class="inline-block rounded-full border border-[#dee2e6] bg-[#dee2e6] p-1"
                     />
-                    <h1>
+                    <h1
+                        class="mb-4 text-[2rem] font-light leading-[1.2] text-[#eee]"
+                    >
                         Chris Poulter<br />
-                        <small>Web Developer</small>
+                        <small class="text-[1.6rem] text-[#adb5bd]"
+                            >Web Developer</small
+                        >
                     </h1>
-                    <p class="jumbotron__lead">
+                    <p class="mb-4 text-[1.25rem] font-light text-[#eee]">
                         I am a web developer based in London. I have over 20
                         years of experience developing commercial web based
                         applications and services using various technologies.
                     </p>
-                    <p class="jumbotron__social">
+                    <p class="mb-2 flex justify-center gap-[1.2rem]">
                         <a
                             href="https://x.com/chrispoulter"
                             aria-label="Twitter"
                             target="_blank"
                             rel="noopener noreferrer"
+                            class="text-[#eee] no-underline"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 16 16"
+                                class="block h-7 w-7"
                             >
                                 <path
                                     d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
@@ -135,11 +160,13 @@
                             aria-label="LinkedIn"
                             target="_blank"
                             rel="noopener noreferrer"
+                            class="text-[#eee] no-underline"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 16 16"
+                                class="block h-7 w-7"
                             >
                                 <path
                                     d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
@@ -151,11 +178,13 @@
                             aria-label="GitHub"
                             target="_blank"
                             rel="noopener noreferrer"
+                            class="text-[#eee] no-underline"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 16 16"
+                                class="block h-7 w-7"
                             >
                                 <path
                                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
@@ -165,11 +194,13 @@
                         <a
                             href="mailto:chris@chrispoulter.com"
                             aria-label="Contact"
+                            class="text-[#eee] no-underline"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 16 16"
+                                class="block h-7 w-7"
                             >
                                 <path
                                     d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
@@ -183,11 +214,15 @@
                 </section>
             </div>
 
-            <div class="container">
-                <section class="section">
-                    <h2>Summary</h2>
+            <div class="m-4 mx-auto max-w-[40rem]">
+                <section class="mb-4">
+                    <h2
+                        class="mb-4 border-b border-[#eee] pb-4 text-[1.6rem] font-light leading-[1.2]"
+                    >
+                        Summary
+                    </h2>
 
-                    <p>
+                    <p class="mb-2">
                         Over the course of the past 20 years I have worked for
                         several companies in various web developer roles. This
                         has involved the maintenance and continued development
@@ -197,11 +232,12 @@
                             href="https://www.novafori.com"
                             target="_blank"
                             rel="noopener noreferrer"
+                            class="text-[#008cba] underline"
                             >NovaFori</a
                         >, who are experts in creating intelligent,
                         enterprise-level auction and trading solutions.
                     </p>
-                    <p>
+                    <p class="mb-2">
                         I have commercial experience working with technologies
                         such as C#, .NET, Node.js, JavaScript and React. This
                         has involved personally developing architecture and
@@ -211,7 +247,7 @@
                         using the Scrum framework. This includes code reviews
                         and continuous delivery.
                     </p>
-                    <p>
+                    <p class="mb-2">
                         My aim for the future is to expand on the knowledge base
                         I currently have and continue to be involved in the
                         architecture and design of web based applications from
@@ -219,174 +255,325 @@
                     </p>
                 </section>
 
-                <section class="section">
-                    <h2>Skills &amp; Expertise</h2>
+                <section class="mb-4">
+                    <h2
+                        class="mb-4 border-b border-[#eee] pb-4 text-[1.6rem] font-light leading-[1.2]"
+                    >
+                        Skills &amp; Expertise
+                    </h2>
 
-                    <h3>Top Skills</h3>
-                    <div class="card-container">
-                        <div class="card">
-                            <h4>.NET</h4>
-                            <p>15+ years</p>
+                    <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
+                        Top Skills
+                    </h3>
+                    <div class="mb-4 flex gap-2">
+                        <div class="flex-1 border border-[#eee] p-4">
+                            <h4
+                                class="mb-4 text-[1.1rem] font-light leading-[1.2]"
+                            >
+                                .NET
+                            </h4>
+                            <p class="mb-2">15+ years</p>
                         </div>
-                        <div class="card">
-                            <h4>SQL</h4>
-                            <p>15+ years</p>
+                        <div class="flex-1 border border-[#eee] p-4">
+                            <h4
+                                class="mb-4 text-[1.1rem] font-light leading-[1.2]"
+                            >
+                                SQL
+                            </h4>
+                            <p class="mb-2">15+ years</p>
                         </div>
-                        <div class="card">
-                            <h4>JavaScript</h4>
-                            <p>15+ years</p>
+                        <div class="flex-1 border border-[#eee] p-4">
+                            <h4
+                                class="mb-4 text-[1.1rem] font-light leading-[1.2]"
+                            >
+                                JavaScript
+                            </h4>
+                            <p class="mb-2">15+ years</p>
                         </div>
                     </div>
 
-                    <h3>Other Skills</h3>
-                    <div class="badge-container">
-                        <span class="badge">C#</span>
-                        <span class="badge">Entity Framework</span>
-                        <span class="badge">Minimal APIs</span>
-                        <span class="badge">MassTransit</span>
-                        <span class="badge">SignalR</span>
-                        <span class="badge">xUnit</span>
-                        <span class="badge">Integration Tests</span>
-                        <span class="badge">Node.js</span>
-                        <span class="badge">Express</span>
-                        <span class="badge">TypeScript</span>
-                        <span class="badge">React</span>
-                        <span class="badge">Next.js</span>
-                        <span class="badge">Redux Toolkit</span>
-                        <span class="badge">I18N</span>
-                        <span class="badge">Playwright</span>
-                        <span class="badge">E2E Testing</span>
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">Sass</span>
-                        <span class="badge">Tailwind CSS</span>
-                        <span class="badge">Responsive Design</span>
-                        <span class="badge">PostgreSQL</span>
-                        <span class="badge">RabbitMQ</span>
-                        <span class="badge">Elasticsearch</span>
-                        <span class="badge">Redis</span>
-                        <span class="badge">DynamoDB</span>
-                        <span class="badge">Git</span>
-                        <span class="badge">Docker</span>
-                        <span class="badge">Serverless</span>
-                        <span class="badge">AWS</span>
-                        <span class="badge">Azure</span>
-                        <span class="badge">CI/CD</span>
-                        <span class="badge">TFS</span>
-                        <span class="badge">GitHub</span>
-                        <span class="badge">Octopus Deploy</span>
-                        <span class="badge">DevOps</span>
-                        <span class="badge">Agile</span>
-                        <span class="badge">Scrum</span>
+                    <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
+                        Other Skills
+                    </h3>
+                    <div class="mb-4 flex flex-wrap justify-center gap-1">
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >C#</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Entity Framework</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Minimal APIs</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >MassTransit</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >SignalR</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >xUnit</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Integration Tests</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Node.js</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Express</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >TypeScript</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >React</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Next.js</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Redux Toolkit</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >I18N</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Playwright</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >E2E Testing</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >HTML</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >CSS</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Sass</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Tailwind CSS</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Responsive Design</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >PostgreSQL</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >RabbitMQ</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Elasticsearch</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Redis</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >DynamoDB</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Git</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Docker</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Serverless</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >AWS</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Azure</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >CI/CD</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >TFS</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >GitHub</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Octopus Deploy</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >DevOps</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Agile</span
+                        >
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >Scrum</span
+                        >
                     </div>
                 </section>
 
-                <section class="section">
-                    <h2>Experience</h2>
+                <section class="mb-4">
+                    <h2
+                        class="mb-4 border-b border-[#eee] pb-4 text-[1.6rem] font-light leading-[1.2]"
+                    >
+                        Experience
+                    </h2>
 
-                    <div class="section__sub-section">
-                        <h3>
+                    <div class="mb-4 border-b border-[#eee] pb-4">
+                        <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
                             NovaFori<br />
-                            <small>Senior Full Stack Developer</small>
+                            <small class="text-[0.9rem] text-[#888]"
+                                >Senior Full Stack Developer</small
+                            >
                         </h3>
-                        <p>
-                            <span class="badge">2017 - Present</span>
+                        <p class="mb-2">
+                            <span
+                                class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                                >2017 - Present</span
+                            >
                         </p>
-                        <p>
+                        <p class="mb-2">
                             NovaFori are experts in creating intelligent,
                             enterprise-level auction and trading solutions.
                             Customers include Christie's, MaruFreight, Global
                             Dairy Trade and Climate Impact X.
                         </p>
-                        <ul>
-                            <li>
+                        <ul class="mb-2 list-disc pl-8">
+                            <li class="list-item text-left">
                                 Part of POC/Labs team, responsible for creating
                                 new architectures and solutions based on client
                                 requirements and future expectations.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Involved in the refactoring of the company's
                                 existing monolith product into a service based
                                 architecture hosted on AWS cloud services.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Created microservices using a serverless
                                 architecture. Technologies used include C#,
                                 .NET, Node.js, PostgreSQL, RabbitMQ and
                                 Elasticsearch.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Involved in the company's adoption of React,
                                 Next.js and TypeScript as their primary UI
                                 technology.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Team of 4 developers that employ an agile
                                 approach using the Scrum framework. This
                                 includes code reviews and continuous delivery.
                             </li>
                         </ul>
-                        <p>
+                        <p class="mb-2">
                             Projects:
                             <a
                                 href="https://www.christies.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="text-[#008cba] underline"
                                 >Christie's</a
                             >,
                             <a
                                 href="https://www.globaldairytrade.info"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="text-[#008cba] underline"
                                 >Global Dairy Trade</a
                             >,
                             <a
                                 href="https://www.climateimpactx.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="text-[#008cba] underline"
                                 >Climate Impact X</a
                             >
                         </p>
                     </div>
 
-                    <div class="section__sub-section">
-                        <h3>
+                    <div class="mb-4 border-b border-[#eee] pb-4">
+                        <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
                             Orbus Software<br />
-                            <small>Software Developer</small>
+                            <small class="text-[0.9rem] text-[#888]"
+                                >Software Developer</small
+                            >
                         </h3>
-                        <p>
-                            <span class="badge">2014 - 2017</span>
+                        <p class="mb-2">
+                            <span
+                                class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                                >2014 - 2017</span
+                            >
                         </p>
-                        <p>
+                        <p class="mb-2">
                             Orbus Software is an independent software vendor and
                             a leading global provider of software solutions for
                             enterprise architecture. Clients include Deloitte,
                             Barclays and Cathay Pacific.
                         </p>
-                        <ul>
-                            <li>
+                        <ul class="mb-2 list-disc pl-8">
+                            <li class="list-item text-left">
                                 Developed for and maintained the company's
                                 enterprise architecture platform. Technologies
                                 used include C#, .NET, SQL Server, AngularJS and
                                 TypeScript.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Green field project making use of a service
                                 based architecture and a single page web
                                 application.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Created various product integrations for third
                                 party services and applications such as
                                 SharePoint, Visio and Office 365.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Responsible for all aspects of DevOps. This
                                 included implementing a release management
                                 pipeline using TFS and hosting on Azure cloud
                                 services.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Team of 6 developers that employed an agile
                                 approach using the Scrum framework. This
                                 included code reviews and continuous delivery.
@@ -394,101 +581,111 @@
                         </ul>
                     </div>
 
-                    <div class="section__sub-section">
-                        <h3>
+                    <div class="mb-4 border-b border-[#eee] pb-4">
+                        <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
                             DC Thomson Family History<br />
-                            <small>Web Developer</small>
+                            <small class="text-[0.9rem] text-[#888]"
+                                >Web Developer</small
+                            >
                         </h3>
-                        <p>
-                            <span class="badge">2010 - 2014</span>
+                        <p class="mb-2">
+                            <span
+                                class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                                >2010 - 2014</span
+                            >
                         </p>
-                        <p>
+                        <p class="mb-2">
                             DC Thomson Family History is a world leader in
                             online genealogy. The company owns brands such as
                             FindMyPast and Genes Reunited. These brands have
                             over 18 million registered users and provide access
                             to over 1.8 billion genealogy records.
                         </p>
-                        <ul>
-                            <li>
+                        <ul class="mb-2 list-disc pl-8">
+                            <li class="list-item text-left">
                                 Developed for and maintained a host of brand web
                                 sites. All of the web sites were public facing,
                                 high traffic and high volume. Technologies used
                                 include C#, .NET, SQL Server and JavaScript.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Involved in a mixture of green and brown field
                                 projects and developments.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Emphasis on database and code optimization and
                                 performance.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Team of 5 developers that employed an agile
                                 approach using the Scrum framework. This
                                 included test driven development, pair
                                 programming and continuous delivery.
                             </li>
                         </ul>
-                        <p>
+                        <p class="mb-2">
                             Projects:
                             <a
                                 href="https://www.findmypast.co.uk"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="text-[#008cba] underline"
                                 >FindMyPast</a
                             >,
                             <a
                                 href="https://www.genesreunited.co.uk"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="text-[#008cba] underline"
                                 >Genes Reunited</a
                             >
                         </p>
                     </div>
 
-                    <div class="section__sub-section">
-                        <h3>
+                    <div class="mb-4 border-b border-[#eee] pb-4">
+                        <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
                             Pelagon<br />
-                            <small>
+                            <small class="text-[0.9rem] text-[#888]">
                                 Senior Developer <br />
                                 .NET Developer
                             </small>
                         </h3>
-                        <p>
-                            <span class="badge">2008 - 2010</span>
+                        <p class="mb-2">
+                            <span
+                                class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                                >2008 - 2010</span
+                            >
                         </p>
-                        <p>
+                        <p class="mb-2">
                             Pelagon provide a web based activity management
                             platform for digital marketing agencies. Clients
                             include the worldwide advertising agencies McCann
                             and DDB.
                         </p>
-                        <ul>
-                            <li>
+                        <ul class="mb-2 list-disc pl-8">
+                            <li class="list-item text-left">
                                 Originally hired as a .NET Developer, progressed
                                 to become a Senior Developer.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Developed for and maintained the company's
                                 activity management platform. Technologies used
                                 include C#, .NET, SQL Server and JavaScript.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Involved in the complete redesign of the
                                 platform from the ground up to make use of newer
                                 technologies. This included a service based
                                 architecture and a single page web application.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Created mobile friendly UI with responsive
                                 design for the new platform. This involved
                                 researching the available mobile technologies at
                                 the time, such as the first generation of smart
                                 phones.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Team of 6 developers that employed an agile
                                 approach using the Scrum framework. This
                                 included code reviews and continuous delivery.
@@ -496,89 +693,98 @@
                         </ul>
                     </div>
 
-                    <div class="section__sub-section">
-                        <h3>
+                    <div class="mb-4 border-b border-[#eee] pb-4">
+                        <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
                             Interactive Prospect Targeting<br />
-                            <small>
+                            <small class="text-[0.9rem] text-[#888]">
                                 Development and Support Team Leader <br />
                                 Web and Database Developer
                             </small>
                         </h3>
-                        <p>
-                            <span class="badge">2004 - 2007</span>
+                        <p class="mb-2">
+                            <span
+                                class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                                >2004 - 2007</span
+                            >
                         </p>
-                        <p>
+                        <p class="mb-2">
                             Interactive Prospect Targeting is the UK's leading
                             online direct marketing solutions provider. The
                             company owns brands such as MyOffers, Daily Diet
                             Tracker and Quiz Factor.
                         </p>
-                        <ul>
-                            <li>
+                        <ul class="mb-2 list-disc pl-8">
+                            <li class="list-item text-left">
                                 Originally hired as a summer intern, progressed
                                 to become a Web and Database Developer and then
                                 a Development and Support Team Leader.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Developed for and maintained a host of brand web
                                 sites. All of the web sites were public facing,
                                 high traffic and high volume. Technologies used
                                 include C#, .NET, classic ASP and SQL Server.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Emphasis on database and code optimization and
                                 performance.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Involved in the company's migration to the .NET
                                 platform. This included the redevelopment of
                                 applications and internal admin tools and the
                                 adoption of new coding and automated testing
                                 standards.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 As Development and Support Team leader I was
                                 responsible for leading a team of 5 developers.
                                 My duties included the break down and
                                 organization of development tasks for the team.
                             </li>
                         </ul>
-                        <p>
+                        <p class="mb-2">
                             Projects:
                             <a
                                 href="https://www.myoffers.co.uk"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="text-[#008cba] underline"
                                 >MyOffers</a
                             >
                         </p>
                     </div>
 
-                    <div class="section__sub-section">
-                        <h3>
+                    <div>
+                        <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
                             Reed<br />
-                            <small>Junior Developer</small>
+                            <small class="text-[0.9rem] text-[#888]"
+                                >Junior Developer</small
+                            >
                         </h3>
-                        <p>
-                            <span class="badge">2002 - 2003</span>
+                        <p class="mb-2">
+                            <span
+                                class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                                >2002 - 2003</span
+                            >
                         </p>
-                        <p>
+                        <p class="mb-2">
                             Reed is the UK's number 1 job agency with over 3.6
                             million people using their services on a monthly
                             basis.
                         </p>
-                        <ul>
-                            <li>
+                        <ul class="mb-2 list-disc pl-8">
+                            <li class="list-item text-left">
                                 Industrial work placement that formed part of my
                                 degree course.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Developed for and maintained the company's
                                 client timesheet management application and
                                 internal admin tools. Technologies used include
                                 classic ASP and SQL Server.
                             </li>
-                            <li>
+                            <li class="list-item text-left">
                                 Created mobile version of the client timesheet
                                 management application using .NET and
                                 Microsoft's Mobile Internet Toolkit. This
@@ -591,23 +797,38 @@
                     </div>
                 </section>
 
-                <section class="section">
-                    <h2>Education</h2>
+                <section class="mb-4">
+                    <h2
+                        class="mb-4 border-b border-[#eee] pb-4 text-[1.6rem] font-light leading-[1.2]"
+                    >
+                        Education
+                    </h2>
 
-                    <h3>
+                    <h3 class="mb-4 text-[1.1rem] font-light leading-[1.2]">
                         BSc (Hons) Computer Science, 2:1<br />
-                        <small>Kingston University</small>
+                        <small class="text-[0.9rem] text-[#888]"
+                            >Kingston University</small
+                        >
                     </h3>
-                    <p>
-                        <span class="badge">2000 - 2004</span>
+                    <p class="mb-2">
+                        <span
+                            class="inline-block bg-[#5bc0de] px-4 py-2 text-center text-[0.75rem] font-light leading-none text-white"
+                            >2000 - 2004</span
+                        >
                     </p>
                 </section>
             </div>
         </main>
 
-        <footer class="container">
-            <div class="section">
-                <p>&copy; <a href="/">Chris Poulter</a> 2024</p>
+        <footer class="m-4 mx-auto max-w-[40rem]">
+            <div class="mb-4">
+                <p class="mb-2">
+                    &copy;
+                    <a href="/" class="text-[#008cba] underline"
+                        >Chris Poulter</a
+                    >
+                    2024
+                </p>
             </div>
         </footer>
 
