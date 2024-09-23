@@ -4,21 +4,21 @@
 
 @layer utilities {
     .bg-paper {
-        background-color: theme(colors.zinc.600);
+        background-color: theme(colors.zinc.700);
         background-image: linear-gradient(
-                theme(colors.zinc.700) 0.8px,
+                theme(colors.zinc.600) 0.8px,
                 transparent 0.8px
             ),
             linear-gradient(
                 90deg,
-                theme(colors.zinc.700) 0.8px,
+                theme(colors.zinc.600) 0.8px,
                 transparent 0.8px
             ),
-            linear-gradient(theme(colors.zinc.700) 0.4px, transparent 0.4px),
+            linear-gradient(theme(colors.zinc.600) 0.4px, transparent 0.4px),
             linear-gradient(
                 90deg,
-                theme(colors.zinc.700) 0.4px,
-                theme(colors.zinc.600) 0.4px
+                theme(colors.zinc.600) 0.4px,
+                theme(colors.zinc.700) 0.4px
             );
         background-size:
             20px 20px,
