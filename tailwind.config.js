@@ -9,8 +9,8 @@ export default {
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans]
             },
-            minHeight: {
-                96: '24rem'
+            fontSize: {
+                base: '.9rem'
             }
         }
     },
