@@ -53,18 +53,26 @@
     </head>
 
     <body>
-        <header class="header">
-            <nav id="navBar" class="navbar">
-                <a href="/" class="navbar__brand">Chris Poulter</a>
+        <header class="bg-neutral-800">
+            <nav
+                id="navBar"
+                class="mx-3 flex max-w-screen-sm flex-wrap items-center justify-between gap-2 py-2 sm:mx-auto"
+            >
+                <a
+                    href="/"
+                    class="text-xl font-light text-white focus:outline-none focus:ring-1 focus:ring-cyan-500"
+                    >Chris Poulter</a
+                >
                 <button
                     id="navButton"
                     aria-label="Toggle Navigation"
-                    class="navbar__toggle"
+                    class="text-gray-300 no-underline hover:text-white focus:text-white focus:outline-none focus:ring-1 focus:ring-cyan-500 sm:hidden"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
                         viewBox="0 0 16 16"
+                        class="h-6 w-6"
                     >
                         <path
                             fill-rule="evenodd"
@@ -72,48 +80,75 @@
                         />
                     </svg>
                 </button>
-                <div id="navLinks" class="navbar__nav">
+                <div
+                    id="navLinks"
+                    class="hidden basis-full flex-col gap-2 sm:flex sm:basis-auto sm:flex-row sm:gap-4"
+                >
                     <a
                         href="https://x.com/chrispoulter"
                         target="_blank"
                         rel="noopener noreferrer"
-                        >Twitter</a
+                        class="px-3 py-2 text-sm font-light text-gray-300 no-underline hover:bg-neutral-900 hover:text-white focus:bg-neutral-900 focus:text-white focus:outline-none focus:ring-1 focus:ring-cyan-500 sm:p-0 sm:hover:bg-transparent sm:focus:bg-transparent"
+                        >X (Twitter)</a
                     >
                     <a
                         href="https://www.linkedin.com/in/chrispoulter"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="px-3 py-2 text-sm font-light text-gray-300 no-underline hover:bg-neutral-900 hover:text-white focus:bg-neutral-900 focus:text-white focus:outline-none focus:ring-1 focus:ring-cyan-500 sm:p-0 sm:hover:bg-transparent sm:focus:bg-transparent"
                         >LinkedIn</a
                     >
                     <a
                         href="https://github.com/chrispoulter"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="px-3 py-2 text-sm font-light text-gray-300 no-underline hover:bg-neutral-900 hover:text-white focus:bg-neutral-900 focus:text-white focus:outline-none focus:ring-1 focus:ring-cyan-500 sm:p-0 sm:hover:bg-transparent sm:focus:bg-transparent"
                         >GitHub</a
                     >
-                    <a href="mailto:chris@chrispoulter.com">Contact</a>
+                    <a
+                        href="mailto:chris@chrispoulter.com"
+                        class="px-3 py-2 text-sm font-light text-gray-300 no-underline hover:bg-neutral-900 hover:text-white focus:bg-neutral-900 focus:text-white focus:outline-none focus:ring-1 focus:ring-cyan-500 sm:p-0 sm:hover:bg-transparent sm:focus:bg-transparent"
+                        >Contact</a
+                    >
                 </div>
             </nav>
         </header>
 
         <main>
-            <div class="cover">
-                <section class="jumbotron">
-                    <h1>Error</h1>
-                    <p class="jumbotron__lead">
+            <div class="bg-paper mb-4 flex min-h-80 items-center">
+                <section
+                    class="mx-3 max-w-screen-sm py-8 text-center sm:mx-auto"
+                >
+                    <h1
+                        class="mb-4 text-3xl font-light leading-tight text-gray-200"
+                    >
+                        Internal Server Error<br />
+                        <small class="text-2xl text-gray-400">HTTP 500</small>
+                    </h1>
+                    <p class="mb-4 text-xl font-light text-gray-200">
                         Sorry, something went wrong. Please try again later.
                     </p>
                     <p>
-                        <a class="button" href="/">Home</a>
+                        <a
+                            href="/"
+                            class="inline-block bg-cyan-600 px-5 py-2 text-center text-xl font-light text-white hover:bg-cyan-700 focus:bg-cyan-700 focus:outline-none focus:ring-1 focus:ring-cyan-500 sm:py-2"
+                            >Home</a
+                        >
                     </p>
                 </section>
             </div>
         </main>
 
-        <footer class="container">
-            <section class="section">
-                <p>&copy; <a href="/">Chris Poulter</a> 2024</p>
-            </section>
+        <footer class="mx-3 mb-4 max-w-screen-sm sm:mx-auto">
+            <p class="text-base text-gray-700">
+                &copy;
+                <a
+                    href="/"
+                    class="text-cyan-600 underline hover:text-cyan-700 focus:text-cyan-700 focus:outline-none focus:ring-1 focus:ring-cyan-500"
+                    >Chris Poulter</a
+                >
+                2024
+            </p>
         </footer>
 
         <script type="module" src="/main.js"></script>
