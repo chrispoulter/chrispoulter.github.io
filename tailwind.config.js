@@ -8,9 +8,6 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans]
-            },
-            fontSize: {
-                base: '.9rem'
             }
         }
     },
