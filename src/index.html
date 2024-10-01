@@ -67,11 +67,12 @@
         <button
             id="theme-toggle"
             type="button"
-            class="fixed right-4 top-4 rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+            class="absolute right-4 top-4 inline-flex items-center rounded-full bg-blue-700 p-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
             <svg
                 id="theme-toggle-dark-icon"
-                class="hidden h-5 w-5"
+                class="hidden h-4 w-4"
+                aria-hidden="true"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +83,8 @@
             </svg>
             <svg
                 id="theme-toggle-light-icon"
-                class="hidden h-5 w-5"
+                class="hidden h-4 w-4"
+                aria-hidden="true"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +95,7 @@
                     clip-rule="evenodd"
                 ></path>
             </svg>
+            <span class="sr-only">Toggle Theme</span>
         </button>
 
         <main>
