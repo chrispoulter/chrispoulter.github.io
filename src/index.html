@@ -64,157 +64,157 @@
     </head>
 
     <body class="bg-white dark:bg-gray-900">
-        <main>
-            <section
-                class="relative mx-auto mb-8 max-w-screen-md border-b border-gray-200 bg-gray-500 bg-[url('/cover.jpg')] bg-center bg-no-repeat px-4 py-8 text-center bg-blend-overlay sm:mt-8 sm:border-t md:rounded dark:border-gray-700 dark:bg-gray-700"
+        <header
+            class="relative mx-auto mb-8 max-w-screen-md border-b border-gray-200 bg-gray-500 bg-[url('/cover.jpg')] bg-center bg-no-repeat px-4 py-8 text-center bg-blend-overlay sm:mt-8 sm:border-t md:rounded dark:border-gray-700 dark:bg-gray-700"
+        >
+            <button
+                id="theme-toggle"
+                type="button"
+                class="absolute right-4 top-4 inline-flex items-center rounded-full border border-blue-700 bg-white p-2.5 text-center text-sm font-medium text-blue-700 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:bg-gray-900 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
             >
-                <button
-                    id="theme-toggle"
-                    type="button"
-                    class="absolute right-4 top-4 inline-flex items-center rounded-full border border-blue-700 bg-white p-2.5 text-center text-sm font-medium text-blue-700 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:bg-gray-900 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
+                <svg
+                    id="theme-toggle-dark-icon"
+                    class="hidden h-5 w-5"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                </svg>
+                <svg
+                    id="theme-toggle-light-icon"
+                    class="hidden h-5 w-5"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                    ></path>
+                </svg>
+                <span class="sr-only">Toggle Theme</span>
+            </button>
+
+            <div
+                class="mb-5 flex flex-col items-center justify-center gap-5 sm:flex-row"
+            >
+                <img
+                    src="/profile.jpg"
+                    alt="Chris Poulter"
+                    width="415"
+                    height="415"
+                    class="h-auto w-56 rounded-full bg-gray-100 sm:w-32"
+                />
+                <h1 class="text-5xl font-bold text-white">
+                    Chris Poulter<br /><small class="text-4xl font-semibold"
+                        >Web Developer</small
+                    >
+                </h1>
+            </div>
+
+            <div
+                class="mb-5 flex flex-col flex-wrap justify-center gap-2 sm:flex-row"
+            >
+                <a
+                    href="https://x.com/chrispoulter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center rounded-lg bg-[#1da1f2] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#1da1f2]/90 focus:outline-none focus:ring-4 focus:ring-[#1da1f2]/50 dark:focus:ring-[#1da1f2]/55"
                 >
                     <svg
-                        id="theme-toggle-dark-icon"
-                        class="hidden h-5 w-5"
+                        class="me-2 h-4 w-4"
                         aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 17"
                     >
                         <path
-                            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                        ></path>
-                    </svg>
-                    <svg
-                        id="theme-toggle-light-icon"
-                        class="hidden h-5 w-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
                             fill-rule="evenodd"
+                            d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
                             clip-rule="evenodd"
-                        ></path>
+                        />
                     </svg>
-                    <span class="sr-only">Toggle Theme</span>
-                </button>
-
-                <div
-                    class="mb-5 flex flex-col items-center justify-center gap-5 sm:flex-row"
+                    Twitter
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/chrispoulter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center rounded-lg bg-[#0077B5] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#0077B5]/90 focus:outline-none focus:ring-4 focus:ring-[#0077B5]/50 dark:focus:ring-[#0077B5]/55"
                 >
-                    <img
-                        src="/profile.jpg"
-                        alt="Chris Poulter"
-                        width="415"
-                        height="415"
-                        class="h-auto w-56 rounded-full bg-gray-100 sm:w-32"
-                    />
-                    <h1 class="text-5xl font-bold text-white">
-                        Chris Poulter<br /><small class="text-4xl font-semibold"
-                            >Web Developer</small
-                        >
-                    </h1>
-                </div>
+                    <svg
+                        class="me-2 h-4 w-4"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                            clip-rule="evenodd"
+                        />
+                        <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+                    </svg>
 
-                <div
-                    class="mb-5 flex flex-col flex-wrap justify-center gap-2 sm:flex-row"
+                    LinkedIn
+                </a>
+                <a
+                    href="https://github.com/chrispoulter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center rounded-lg bg-[#24292F] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#24292F]/90 focus:outline-none focus:ring-4 focus:ring-[#24292F]/50 dark:hover:bg-[#050708]/30 dark:focus:ring-gray-500"
                 >
-                    <a
-                        href="https://x.com/chrispoulter"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center justify-center rounded-lg bg-[#1da1f2] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#1da1f2]/90 focus:outline-none focus:ring-4 focus:ring-[#1da1f2]/50 dark:focus:ring-[#1da1f2]/55"
+                    <svg
+                        class="me-2 h-4 w-4"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
                     >
-                        <svg
-                            class="me-2 h-4 w-4"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            viewBox="0 0 20 17"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        Twitter
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/chrispoulter"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center justify-center rounded-lg bg-[#0077B5] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#0077B5]/90 focus:outline-none focus:ring-4 focus:ring-[#0077B5]/50 dark:focus:ring-[#0077B5]/55"
+                        <path
+                            fill-rule="evenodd"
+                            d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                            clip-rule="evenodd"
+                        />
+                    </svg>
+                    GitHub
+                </a>
+                <a
+                    href="mailto:chris@chrispoulter.com"
+                    class="flex items-center justify-center rounded-lg bg-[#4285F4] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#4285F4]/90 focus:outline-none focus:ring-4 focus:ring-[#4285F4]/50 dark:focus:ring-[#4285F4]/55"
+                >
+                    <svg
+                        class="me-2 h-4 w-4"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
                     >
-                        <svg
-                            class="me-2 h-4 w-4"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
-                                clip-rule="evenodd"
-                            />
-                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
-                        </svg>
+                        <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-width="2"
+                            d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
+                        />
+                    </svg>
+                    Contact
+                </a>
+            </div>
+            <p class="text-lg text-white">
+                I am a web developer based in London. I have over 20 years of
+                experience developing commercial web based applications and
+                services using various technologies.
+            </p>
+        </header>
 
-                        LinkedIn
-                    </a>
-                    <a
-                        href="https://github.com/chrispoulter"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center justify-center rounded-lg bg-[#24292F] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#24292F]/90 focus:outline-none focus:ring-4 focus:ring-[#24292F]/50 dark:hover:bg-[#050708]/30 dark:focus:ring-gray-500"
-                    >
-                        <svg
-                            class="me-2 h-4 w-4"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        GitHub
-                    </a>
-                    <a
-                        href="mailto:chris@chrispoulter.com"
-                        class="flex items-center justify-center rounded-lg bg-[#4285F4] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#4285F4]/90 focus:outline-none focus:ring-4 focus:ring-[#4285F4]/50 dark:focus:ring-[#4285F4]/55"
-                    >
-                        <svg
-                            class="me-2 h-4 w-4"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-width="2"
-                                d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
-                            />
-                        </svg>
-                        Contact
-                    </a>
-                </div>
-                <p class="text-lg text-white">
-                    I am a web developer based in London. I have over 20 years
-                    of experience developing commercial web based applications
-                    and services using various technologies.
-                </p>
-            </section>
-
+        <main>
             <section
                 class="mx-auto mb-8 max-w-screen-md border-b border-gray-200 px-4 pb-8 dark:border-gray-700"
             >
