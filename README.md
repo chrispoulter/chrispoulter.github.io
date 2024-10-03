@@ -12,5 +12,5 @@ This repository contains the code for my personal website, showcasing my profess
 
 ## Website
 
-You can visit the live website here [https://www.chrispoulter.com](https://www.chrispoulter.com)
+You can visit the live website here: [https://www.chrispoulter.com](https://www.chrispoulter.com)
 
