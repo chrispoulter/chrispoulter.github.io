@@ -4,16 +4,16 @@ This repository contains the code for my personal website 👋 showcasing my pro
 
 ## Features
 
-⭐ **Skillset**: A detailed overview of my professional skills.
+-   **Skillset**: A detailed overview of my professional skills.
 
-⭐ **Work Experience**: A timeline of my past roles and achievements.
+-   **Work Experience**: A timeline of my past roles and achievements.
 
-⭐ **Education**: Information about my academic background.
+-   **Education**: Information about my academic background.
 
-⭐ **Social Links**: Connect with me on various platforms such as LinkedIn, GitHub, etc.
+-   **Social Links**: Connect with me on various platforms such as LinkedIn, GitHub, etc.
 
-⭐ **Contact Information**: Reach out to me directly via the contact information provided.
+-   **Contact Information**: Reach out to me directly via the contact information provided.
 
 ## Website
 
-🌐 You can visit the live website here: [https://www.chrispoulter.com](https://www.chrispoulter.com)
+You can visit the live website here: [https://www.chrispoulter.com](https://www.chrispoulter.com)
