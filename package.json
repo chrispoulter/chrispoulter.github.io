@@ -10,7 +10,7 @@
         "format": "prettier --write ."
     },
     "dependencies": {
-        "@fontsource-variable/open-sans": "^5.2.7",
+        "@fontsource-variable/inter": "^5.2.8",
         "@tailwindcss/vite": "^4.1.18",
         "tailwindcss": "^4.1.18"
     },
