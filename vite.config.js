@@ -3,7 +3,8 @@ import tailwindcss from '@tailwindcss/vite';
 import path from 'node:path';
 
 const version =
-    process.env.GITHUB_SHA?.slice(0, 7) ?? process.env.npm_package_version;
+    process.env.GITHUB_SHA?.slice(0, 7) ??
+    `v${process.env.npm_package_version}`;
 
 const currentYear = new Date().getFullYear();
 

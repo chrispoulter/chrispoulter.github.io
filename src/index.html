@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en-gb">
     <head>
@@ -90,6 +90,7 @@
             <button
                 id="theme-toggle"
                 type="button"
+                aria-label="Toggle theme"
                 class="absolute top-4 right-4 inline-flex cursor-pointer items-center rounded-full border border-blue-700 bg-white p-2.5 text-center text-sm font-medium text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 focus:outline-hidden dark:border-blue-500 dark:bg-gray-900 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
             >
                 <svg
@@ -118,7 +119,6 @@
                         clip-rule="evenodd"
                     ></path>
                 </svg>
-                <span class="sr-only">Toggle Theme</span>
             </button>
 
             <div
@@ -834,7 +834,7 @@
                 </div>
             </section>
 
-            <section class="mx-auto max-w-3xl px-4 pb-8 dark:border-gray-700">
+            <section class="mx-auto max-w-3xl px-4 pb-8">
                 <h2 class="mb-5 text-2xl font-bold dark:text-white">
                     Education
                 </h2>
@@ -871,7 +871,7 @@
                     %VITE_APP_BUILD_YEAR%
                 </div>
                 <div class="text-base text-gray-500 dark:text-gray-400">
-                    v%VITE_APP_VERSION%
+                    %VITE_APP_VERSION%
                 </div>
             </div>
         </footer>
