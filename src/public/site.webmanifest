@@ -1,7 +1,11 @@
 {
-    "name": "Chris Poulter",
+    "name": "Chris Poulter - Web Developer",
     "short_name": "Chris Poulter",
+    "description": "Web developer based in London with over 20 years of experience building commercial web applications and services.",
     "start_url": "/",
+    "display": "standalone",
+    "background_color": "#111827",
+    "theme_color": "#111827",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -12,9 +16,11 @@
             "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+            "src": "/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
         }
-    ],
-    "theme_color": "#111827",
-    "background_color": "#111827",
-    "display": "standalone"
+    ]
 }
