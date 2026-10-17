@@ -20,8 +20,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: path.resolve(import.meta.dirname, 'src', 'index.html'),
-                404: path.resolve(import.meta.dirname, 'src', '404.html'),
-                500: path.resolve(import.meta.dirname, 'src', '50x.html')
+                404: path.resolve(import.meta.dirname, 'src', '404.html')
             }
         }
     },
